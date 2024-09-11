@@ -52,14 +52,20 @@ hr.topnav {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ecececff; /* Add a light-grey background on hover */
-    color: #4a64e5ff;
+    background-color: #4a64e5ff; /* Add a light-grey background on hover */
+    color: #ecececff;
+    padding: 10px 22px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px; /* Rounded corners */
+    border-bottom-right-radius: revert;
+    border-color: #ecececff;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #4a64e5ff;
-    color: #ecececff;
+    background-color: #ecececff;
+    color: #4a64e5ff;
     padding: 10px 22px;
     border-width: 2px;
     border-style: solid;
