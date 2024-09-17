@@ -1,3 +1,37 @@
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 768px) {
+    .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+/*for mobile*/
+@media(max-width: 768px)
+{
+    .box
+    {
+        width:100%;
+    }
+}
+@media(min-width:768px)
+{
+    .box
+    {
+        width:40vw;
+    }
+}
+
+
 body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     text-align: center;
@@ -35,10 +69,15 @@ hr {
 }
 
 hr.topnav {
-    width: 411px;
-    position: fixed;
-    top: 67px;
-    right: 33px;
+    /*display: inline-block;*/
+    /*width: 460vw;*/
+    width:35em;
+    max-width:88vw;
+    top: 5.1em;
+        /*width: 411px;*/
+    /*max-width: 300em;*/
+    /*top: 67px;*/
+    /*right: 33px;*/
 }
 
 /* Add a background color to the top navigation */
@@ -49,6 +88,7 @@ hr.topnav {
     top: 20px; /* Place the button at the top of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
+    /*max-width: 45vw;*/
 }
 
 /* Style the links inside the navigation bar */
@@ -58,7 +98,9 @@ hr.topnav {
     text-align: center;
     padding: 9px 21px;
     text-decoration: none;
-    font-size: 17px;
+    /*font-size: 17px;*/
+    font-size: 2vw;
+    max-block-size: 2.8vw;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
