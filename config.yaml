@@ -1,3 +1,22 @@
-baseURL: https://manonsikkes.github.io/closecircle-website
+baseURL: https://manonsikkes.github.io/closecircle-website/
 languageCode: nl
 title: CloseCircle
+enableEmoji: true
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+languages:
+  nl:
+    contentDir: content/nl
+    disabled: false
+    languageCode: nl-NL
+    languageDirection: ltr
+    languageName: Nederlands
+    weight: 2
+  en:
+    contentDir: content/en
+    disabled: false
+    languageCode: en-US
+    languageDirection: ltr
+    languageName: English
+    weight: 1

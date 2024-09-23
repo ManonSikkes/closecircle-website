@@ -1,0 +1,170 @@
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 768px) {
+    .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+/*for mobile*/
+@media(max-width: 768px)
+{
+    .box
+    {
+        width:100%;
+    }
+}
+@media(min-width:768px)
+{
+    .box
+    {
+        width:40vw;
+    }
+}
+
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #5a71e5;
+    color: #ecececff;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: #ecececff;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    font-style: normal;
+    text-align: center;
+    color: #ecececff;
+}
+
+hr {
+    width: 500px;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #bdcaec;
+    /*margin: 1em 0;*/
+    /*padding: 0;*/
+    /*opacity: 0.85;*/
+    /*border-style: none;*/
+    /*border-width:0;*/
+}
+
+hr.topnav {
+    /*display: inline-block;*/
+    /*width: 460vw;*/
+    width:35em;
+    max-width:91vw;
+    top: 4.9em;
+        /*width: 411px;*/
+    /*max-width: 300em;*/
+    /*top: 67px;*/
+    /*right: 33px;*/
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: #5a71e5;
+    overflow: hidden;
+    position: fixed; /* Fixed/sticky position */
+    top: 1em; /* Place the button at the top of the page */
+    right: 1em; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    /*max-width: 45vw;*/
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #ecececff;
+    text-align: center;
+    padding: 9px 21px;
+    text-decoration: none;
+    /*font-size: 17px;*/
+    font-size: 1.2em; /* 2vw */
+    max-block-size: 2.8vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-style: none;
+    border-radius: 10px; /* Rounded corners */
+    border-bottom-right-radius: revert;
+    display: inline-block;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+
+/* Change the background of the links on hover */
+.topnav a:hover {
+    color: #ecececff;
+    padding: 7px 19px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px; /* Rounded corners */
+    border-bottom-right-radius: revert;
+    border-color: #bdcaec; /* Off-white */
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-image: linear-gradient(to right, #8c52ff 0%, #59b4ee 100%);
+    color: #ecececff;
+    /*background-color: #ecececff; white background on hover*/
+    /*color: #5a71e5;*/
+    padding: 7px 19px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px; /* Rounded corners */
+    border-bottom-right-radius: revert;
+    border-color: #bdcaec;
+}
+
+/* FONTS */
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}

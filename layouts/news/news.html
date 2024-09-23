@@ -3,24 +3,20 @@
   {{ range $index, $element := split $url "/" }}
     {{ if eq $element "nl" }}
           <div class="topnav">
-          <a class="active" href='{{ "" | absLangURL }}'>CC</a>
-          <a href='{{ "news" | absLangURL }}'>Nieuws</a>
+          <a href='{{ "" | absLangURL }}'>CC</a>
+          <a class="active" href='{{ "news" | absLangURL }}'>Nieuws</a>
           <a href='{{ "contact" | absLangURL }}'>Contact</a>
           <a href='{{ "about" | absLangURL }}'>Over</a>
         </div>
     {{ else if eq $element "en"}}
         <div class="topnav">
-          <a class="active" href='{{ "" | absLangURL }}'>Home</a>
-          <a href='{{ "news" | absLangURL }}'>News</a>
+          <a href='{{ "" | absLangURL }}'>Home</a>
+          <a class="active" href='{{ "news" | absLangURL }}'>News</a>
           <a href='{{ "contact" | absLangURL }}'>Contact</a>
           <a href='{{ "about" | absLangURL }}'>About</a>
         </div>
     {{ end }}
   {{ end }}
     <hr class="topnav">
-
-        <br></br>
-        <br></br>
-        <br></br>
-<img src="/closecircle-website/images/cc-logo.png" width="550px" style="max-width:55vw;position:relative; top: 0.8em;">
+{{ partial "center-content.html" . }}
 {{ partial "footer.html" . }}
